@@ -1,0 +1,33 @@
+GET http://localhost:8000/api/user
+
+
+###
+POST http://localhost:8000/api/user
+Content-Type: application/json
+
+{
+    "firstName" : "Bat-Erdene",
+    "lastName" : "Ganzorig",
+    "username" : "ganzo1",
+    "email" : "baterdeneganzorig99999@gmail.com",
+    "birthDate" : "2004-07-21",
+    "phoneNumber" : 89018415,
+    "gender" : 1,
+
+}
+
+
+###
+PUT http://localhost:8000/api/user/641a475877e1edbc0d60fb34
+Content-Type: application/json
+
+{
+  "username": "Salads"
+}
+
+###
+GET http://localhost:8000/api/user/641a477477e1edbc0d60fb39
+
+
+###
+DELETE http://localhost:8000/api/user/641a477477e1edbc0d60fb39
